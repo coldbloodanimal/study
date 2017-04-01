@@ -42,8 +42,8 @@ public class MailQQBackUp2 {
      */  
     public static void receive() throws Exception {  
     	String host = "imap.qq.com";
-        String username = "744142727@qq.com";
-        String password = "nwguifxatmtfbfia";
+        String username="abcd@qq.com";
+        String password="heheda";
         Properties props = new Properties();
         props.setProperty("mail.imap.ssl.enable", "true");
         // set any other needed mail.imap.* properties here

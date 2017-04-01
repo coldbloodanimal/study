@@ -57,8 +57,8 @@ public class MailQQ {
 //        store.connect("dang7758@126.com", "abcd1234");  
     	
         String host = "imap.qq.com";
-        String username = "744142727@qq.com";
-        String password = "nwguifxatmtfbfia";
+        String username="abcd@qq.com";
+        String password="heheda";
         Properties props = new Properties();
         props.setProperty("mail.imap.ssl.enable", "true");
         // set any other needed mail.imap.* properties here

@@ -44,11 +44,13 @@ public class POP3CompanyTest1 {
         props.setProperty("mail.store.protocol", "pop3");       // 协议  
         props.setProperty("mail.pop3.port", "110");             // 端口  
         props.setProperty("mail.pop3.host", "pop.exmail.qq.com");    // pop3服务器  
-          
+
         // 创建Session实例对象  
         Session session = Session.getInstance(props);  
         Store store = session.getStore("pop3");  
-        store.connect("service@bankaiit.com", "bankaiiT1426");  
+        String username="abcd@qq.com";
+        String password="heheda";
+        store.connect(username,password);  
           
         // 获得收件箱  
         Folder folder = store.getFolder("INBOX");  

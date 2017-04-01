@@ -39,7 +39,9 @@ public class IMAPReceiveMailTest {
         Store store = session.getStore("imap");  
           
         // 连接邮件服务器  
-        store.connect("dang7758@126.com", "abcd1234"); 
+        String username="abcd@qq.com";
+        String password="heheda";
+        store.connect(username,password);  
           
         // 获得收件箱  
         Folder folder = store.getFolder("INBOX");  

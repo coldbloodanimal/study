@@ -41,20 +41,10 @@ public class MailQQBackUp {
      * 接收邮件 
      */  
     public static void receive() throws Exception {  
-        // 准备连接服务器的会话信息  
-//        Properties props = new Properties();  
-//        props.setProperty("mail.store.protocol", "imap");       // 协议  
-//        props.setProperty("mail.pop3.port", "143");             // 端口  
-//        props.setProperty("mail.pop3.host", "imap.126.com");    // pop3服务器  
-//          
-//        // 创建Session实例对象  
-//        Session session = Session.getInstance(props);  
-//        Store store = session.getStore("imap");  
-//        store.connect("dang7758@126.com", "abcd1234");  
     	
         String host = "imap.qq.com";
-        String username = "744142727@qq.com";
-        String password = "nwguifxatmtfbfia";
+        String username="abcd@qq.com";
+        String password="heheda";
         Properties props = new Properties();
         props.setProperty("mail.imap.ssl.enable", "true");
         // set any other needed mail.imap.* properties here

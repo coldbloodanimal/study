@@ -41,8 +41,9 @@ public class IMAPCompany {
     public static void receive() throws Exception {  
         // 准备连接服务器的会话信息      	
         String host = "imap.exmail.qq.com";
-        String username = "service@bankaiit.com";
-        String password = "bankaiiT1426";
+
+        String username="abcd@qq.com";
+        String password="heheda";
         Properties props = new Properties();
         props.setProperty("mail.imap.ssl.enable", "true");
         // set any other needed mail.imap.* properties here

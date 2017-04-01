@@ -48,7 +48,9 @@ public class Mail126 {
         // 创建Session实例对象  
         Session session = Session.getInstance(props);  
         Store store = session.getStore("pop3");  
-        store.connect("dang7758@126.com", "abcd1234");  
+        String username="abcd@qq.com";
+        String password="heheda";
+        store.connect(username,password);  
           
         // 获得收件箱  
         Folder folder = store.getFolder("INBOX");  

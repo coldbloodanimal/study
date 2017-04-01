@@ -46,9 +46,6 @@ public class GmailFetch {
   
   //请将红色部分对应替换成你的邮箱帐号和密码  
   
-  URLName urln = new URLName("pop3","pop.126.com",995,null,  
-  
-    "coldbloodanimal@126.com", "abcd1234");  
   
   Store store = session.getStore(urln);  
   

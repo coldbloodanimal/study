@@ -46,8 +46,8 @@ public class MailQQSaveAttachAsZip {
     public static void receive() throws Exception {  
         // 准备连接服务器的会话信息  
         String host = "imap.qq.com";
-        String username = "744142727@qq.com";
-        String password = "nwguifxatmtfbfia";
+        String username="abcd@qq.com";
+        String password="heheda";
         Properties props = new Properties();
         props.setProperty("mail.imap.ssl.enable", "true");
         Session session = Session.getInstance(props);

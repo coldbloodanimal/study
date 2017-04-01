@@ -33,7 +33,9 @@ public class Test_Email_N {
         properties.put("mail.smtp.host", "smtp.qq.com");
         properties.put("mail.smtp.port", "25");
         properties.put("mail.smtp.auth", "true");
-        Authenticator authenticator = new Email_Authenticator("744142727@qq.com", "terminal");
+        String username="abcd@qq.com";
+        String password="heheda";
+        Authenticator authenticator = new Email_Authenticator(username,password);
         javax.mail.Session sendMailSession = javax.mail.Session.getDefaultInstance(properties, authenticator);
         MimeMessage mailMessage = new MimeMessage(sendMailSession);
         mailMessage.setFrom(new InternetAddress("744142727@qq.com"));

@@ -1,0 +1,17 @@
+package com.command;
+
+public class LightOnCommand implements Command{
+
+	private Light light;
+	public LightOnCommand(Light light) {
+		super();
+		this.light = light;
+	}
+
+	@Override
+	public void excute() {
+		light.on();
+		
+	}
+
+}

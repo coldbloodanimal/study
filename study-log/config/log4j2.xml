@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+			    <File name="error" fileName="logs/study-log/error.log">  
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />  
+        </File> 
+        <File name="info" fileName="logs/study-log/info.log">  
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />  
+        </File> 
+	</Appenders>
+  
+	<Loggers>
+<!-- 		<Logger name="com.log4j.Log4j2Custom" level="info" additivity="false"> -->
+<!-- 			<AppenderRef ref="info" /> -->
+<!-- 			<AppenderRef ref="Console" /> -->
+<!-- 		</Logger> -->
+<!-- 				<Logger name="com.log4j.Log4j2Custom" level="error" additivity="false"> -->
+<!-- 			<AppenderRef ref="error" /> -->
+<!-- 			<AppenderRef ref="Console" /> -->
+<!-- 		</Logger> -->
+		<Root level="error">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration> 
